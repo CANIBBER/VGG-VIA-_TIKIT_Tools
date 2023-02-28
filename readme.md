@@ -10,17 +10,17 @@
     4. opencv
 
 ## Important Issue
-* Suitable for beginner who are learning VGG Data.
-* The latest Mask R-CNN supports VGG version 1.60, the label format is quite different from the latest version 2.0.12. Please check your VIA version before applying this repository.
-* This repository is coded for Instance Segmentation, I am not sure whether it could work on other kinds of dataset. 
+* Suitable for beginner who are learning VIA Data.
+* Since the latest Mask R-CNN supports VGG version 1.60. Its label format is quite different from the latest version 2.0.12. Please check your VIA version before applying this repository.
+* This repository is coded mainly towards labels of Instance Segmentation, and I am not sure whether it could work well on other kinds of label formats. 
 * This repository will be further updated (2023.02.27).
 
 ## Code Catalogue & Abstract
 ###   VGG_expand.py
-    This code is used to expand images' scale and generate new VGG labels for Data Augmentations
+    This code is used to expand images' scale randomly and generate new VGG labels for Data Augmentations
     Offer both sample function and batch processing function
 ###   VGG_rotate.py
-    This code is used to rotate images and generate new VGG labels for Data Augmentations
+    This code is used to rotate the original images at random angles and generate new VGG labels for Data Augmentations.
     Offer both sample function and batch processing function
 ###   VGG_TO_MASK_IMG.py
     This code is used to transfer labels into mask png for Semantic Segmentation
